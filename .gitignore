@@ -415,3 +415,5 @@ FodyWeavers.xsd
 # Ignore Cognee system and data storage
 13-agent-memory/.cognee_system
 13-agent-memory/.data_storage
+
+.idea/
