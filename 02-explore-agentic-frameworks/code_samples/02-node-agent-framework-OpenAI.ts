@@ -92,9 +92,9 @@ console.log();
 // Demonstrate contextual conversation by referencing the previous response
 // The agent remembers the previous destination suggestion and will provide an alternative
 // This showcases the power of conversation sessions and contextual understanding
-// inputList.push({ role: "user", content: "I don't like that destination. Plan me another vacation." });
-// console.log("USER:\nI don't like that destination. Plan me another vacation.");
-// inputList = await CreateOpenAIResponse(inputList);
+inputList.push({ role: "user", content: "I don't like that destination. Plan me another vacation." });
+console.log("USER:\nI don't like that destination. Plan me another vacation.");
+inputList = await CreateOpenAIStreamResponse(inputList);
 
 // Function to create an OpenAI response and handle the output
 async function CreateOpenAIStreamResponse(inputList: OpenAIResponseInput): Promise<OpenAIResponseInput> {
